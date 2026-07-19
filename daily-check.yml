@@ -1,0 +1,31 @@
+name: Daily Portfolio Check
+
+on:
+  schedule:
+    # 21:00 UTC, Mon–Fri — roughly after US market close. Adjust as you like.
+    - cron: '0 21 * * 1-5'
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit status.json back
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run signal check
+        run: python check_signals.py
+
+      - name: Commit updated status.json
+        run: |
+          git config user.name "portfolio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add status.json
+          git diff --staged --quiet || git commit -m "Automated daily check $(date -u +%F)"
+          git push
