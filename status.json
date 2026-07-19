@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-07-19T01:58:20.988736Z",
+  "signals": [
+    {
+      "ticker": "AMZN",
+      "error": "quote_unavailable"
+    },
+    {
+      "ticker": "AR",
+      "error": "quote_unavailable"
+    },
+    {
+      "ticker": "AR",
+      "error": "quote_unavailable"
+    },
+    {
+      "ticker": "TSLA",
+      "error": "quote_unavailable"
+    },
+    {
+      "ticker": "TSLA",
+      "error": "quote_unavailable"
+    },
+    {
+      "ticker": "GOOGL",
+      "error": "quote_unavailable"
+    }
+  ],
+  "safeCandidates": [],
+  "note": "Screen = lowest realized volatility among a fixed large-cap universe, currently trading above its 200-day average. Not a recommendation to buy; purchase decisions are yours alone."
+}
