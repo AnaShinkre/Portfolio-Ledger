@@ -18,6 +18,12 @@ import urllib.request
 
 STOOQ_QUOTE = "https://stooq.com/q/l/?s={sym}&f=sd2t2ohlcv&h&e=csv"
 STOOQ_HIST = "https://stooq.com/q/d/l/?s={sym}&i=d"
+YAHOO_CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range={rng}"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+}
 
 # Fixed screening universe: well-established large-cap names across sectors.
 # This list is a starting point, not an endorsement — edit it freely.
@@ -28,14 +34,18 @@ CANDIDATE_UNIVERSE = [
 ]
 
 
+def _get(url):
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return r.read().decode()
+
+
 def stooq_symbol(ticker):
     return ticker.lower() + ".us"
 
 
-def fetch_quote(ticker):
-    url = STOOQ_QUOTE.format(sym=stooq_symbol(ticker))
-    with urllib.request.urlopen(url, timeout=15) as r:
-        text = r.read().decode()
+def fetch_quote_stooq(ticker):
+    text = _get(STOOQ_QUOTE.format(sym=stooq_symbol(ticker)))
     reader = csv.DictReader(io.StringIO(text))
     row = next(reader, None)
     if not row:
@@ -43,26 +53,70 @@ def fetch_quote(ticker):
     close = row.get("Close")
     if close in (None, "N/D", ""):
         return None
-    try:
-        return float(close)
-    except ValueError:
+    return float(close)
+
+
+def fetch_quote_yahoo(ticker):
+    text = _get(YAHOO_CHART.format(sym=ticker, rng="5d"))
+    data = json.loads(text)
+    result = data.get("chart", {}).get("result")
+    if not result:
         return None
+    price = result[0].get("meta", {}).get("regularMarketPrice")
+    return float(price) if price is not None else None
 
 
-def fetch_history(ticker, max_rows=260):
-    url = STOOQ_HIST.format(sym=stooq_symbol(ticker))
-    with urllib.request.urlopen(url, timeout=15) as r:
-        text = r.read().decode()
+def fetch_quote(ticker):
+    try:
+        p = fetch_quote_stooq(ticker)
+        if p:
+            return p
+    except Exception as e:
+        print(f"  stooq quote failed for {ticker}: {e}")
+    try:
+        p = fetch_quote_yahoo(ticker)
+        if p:
+            return p
+    except Exception as e:
+        print(f"  yahoo quote failed for {ticker}: {e}")
+    return None
+
+
+def fetch_history_stooq(ticker, max_rows=260):
+    text = _get(STOOQ_HIST.format(sym=stooq_symbol(ticker)))
     rows = list(csv.DictReader(io.StringIO(text)))
     closes = []
     for row in rows[-max_rows:]:
         c = row.get("Close")
         if c and c not in ("N/D", ""):
-            try:
-                closes.append(float(c))
-            except ValueError:
-                pass
+            closes.append(float(c))
     return closes
+
+
+def fetch_history_yahoo(ticker):
+    text = _get(YAHOO_CHART.format(sym=ticker, rng="1y"))
+    data = json.loads(text)
+    result = data.get("chart", {}).get("result")
+    if not result:
+        return []
+    closes_raw = result[0]["indicators"]["quote"][0].get("close", [])
+    return [c for c in closes_raw if c is not None]
+
+
+def fetch_history(ticker, max_rows=260):
+    try:
+        closes = fetch_history_stooq(ticker, max_rows)
+        if closes:
+            return closes
+    except Exception as e:
+        print(f"  stooq history failed for {ticker}: {e}")
+    try:
+        closes = fetch_history_yahoo(ticker)
+        if closes:
+            return closes
+    except Exception as e:
+        print(f"  yahoo history failed for {ticker}: {e}")
+    return []
 
 
 def annualized_volatility(closes):
@@ -134,13 +188,13 @@ def main():
 
     signals = []
     for pos in positions:
-        try:
-            price = fetch_quote(pos["ticker"])
-        except Exception:
-            price = None
+        print(f"Fetching quote for {pos['ticker']}...")
+        price = fetch_quote(pos["ticker"])
         if price is None:
+            print(f"  -> unavailable")
             signals.append({"ticker": pos["ticker"], "error": "quote_unavailable"})
             continue
+        print(f"  -> {price}")
         signals.append(compute_signal(pos, settings, price, today))
 
     candidates = []
