@@ -1,8 +1,38 @@
 [
   {
-    "ticker": "AAPL",
-    "shares": 10,
-    "cost": 150.00,
-    "date": "2025-03-01"
-  }
+    "ticker": "AMZN",
+    "shares": 1,
+    "cost": 230.00,
+    "date": "02-07-25"
+  },
+  {
+ "ticker": "AR",
+    "shares": 2,
+    "cost": 64.32,
+    "date": "01-15-26"
+  },   
+{
+ "ticker": "AR",
+    "shares": 2,
+    "cost": 21.10,
+    "date": "05-08-23"
+  },   
+{
+ "ticker": "GOOGL",
+    "shares": 1,
+    "cost": 107.02,
+    "date": "05-08-23"
+  },   
+{
+ "ticker": "TSLA",
+    "shares": 0.06747,
+    "cost": 20.00,
+    "date": "06-06-25"
+  },   
+{
+ "ticker": "TSLA",
+    "shares": 1,
+    "cost": 171.43,
+    "date": "05-08-23"
+  },   
 ]
