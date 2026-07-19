@@ -195,7 +195,14 @@ def main():
             signals.append({"ticker": pos["ticker"], "error": "quote_unavailable"})
             continue
         print(f"  -> {price}")
-        signals.append(compute_signal(pos, settings, price, today))
+        try:
+            signals.append(compute_signal(pos, settings, price, today))
+        except Exception as e:
+            print(f"  -> could not compute signal: {e}")
+            signals.append({
+                "ticker": pos["ticker"],
+                "error": f"bad_position_data: {e} (check 'date' is YYYY-MM-DD and 'shares'/'cost' are numbers)"
+            })
 
     candidates = []
     for t in CANDIDATE_UNIVERSE:
