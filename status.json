@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T04:37:33.798519Z",
+  "generatedAt": "2026-08-07T23:03:29.361902Z",
   "signals": [
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 272.26,
-      "unrealized": 42.26,
-      "afterTax": 35.92,
+      "price": 274.48,
+      "unrealized": 44.48,
+      "afterTax": 37.81,
       "holdingDays": 546,
       "isLT": true,
       "signal": "HOLD",
@@ -15,9 +15,9 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 34.9,
-      "unrealized": -58.84,
-      "afterTax": -58.84,
+      "price": 34.71,
+      "unrealized": -59.22,
+      "afterTax": -59.22,
       "holdingDays": 204,
       "isLT": false,
       "signal": "HOLD",
@@ -26,9 +26,9 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 34.9,
-      "unrealized": -14.6,
-      "afterTax": -14.6,
+      "price": 34.71,
+      "unrealized": -14.98,
+      "afterTax": -14.98,
       "holdingDays": 1187,
       "isLT": true,
       "signal": "HOLD",
@@ -37,9 +37,9 @@
     {
       "ticker": "TSLA",
       "shares": 0.06747,
-      "price": 319.53,
-      "unrealized": 20.21,
-      "afterTax": 17.18,
+      "price": 328.58,
+      "unrealized": 20.82,
+      "afterTax": 17.7,
       "holdingDays": 427,
       "isLT": true,
       "signal": "HOLD",
@@ -48,9 +48,9 @@
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 319.53,
-      "unrealized": 148.1,
-      "afterTax": 125.88,
+      "price": 328.58,
+      "unrealized": 157.15,
+      "afterTax": 133.58,
       "holdingDays": 1187,
       "isLT": true,
       "signal": "HOLD",
@@ -59,9 +59,9 @@
     {
       "ticker": "GOOGL",
       "shares": 1,
-      "price": 357.75,
-      "unrealized": 250.73,
-      "afterTax": 213.12,
+      "price": 354.3,
+      "unrealized": 247.28,
+      "afterTax": 210.19,
       "holdingDays": 1187,
       "isLT": true,
       "signal": "SELL",
@@ -70,39 +70,39 @@
   ],
   "safeCandidates": [
     {
-      "ticker": "SO",
-      "price": 92.9,
-      "volatility": 0.1704,
+      "ticker": "DUK",
+      "price": 124.85,
+      "volatility": 0.157,
       "aboveSMA200": true
     },
     {
       "ticker": "JNJ",
-      "price": 256.98,
+      "price": 259.24,
       "volatility": 0.1833,
       "aboveSMA200": true
     },
     {
       "ticker": "KO",
-      "price": 86.85,
+      "price": 87.05,
       "volatility": 0.1874,
       "aboveSMA200": true
     },
     {
       "ticker": "V",
-      "price": 370.47,
-      "volatility": 0.2178,
+      "price": 362.5,
+      "volatility": 0.2185,
       "aboveSMA200": true
     },
     {
       "ticker": "MA",
-      "price": 575.95,
-      "volatility": 0.2218,
+      "price": 562.95,
+      "volatility": 0.2217,
       "aboveSMA200": true
     },
     {
       "ticker": "JPM",
-      "price": 356.3,
-      "volatility": 0.2227,
+      "price": 357.52,
+      "volatility": 0.2226,
       "aboveSMA200": true
     }
   ],
