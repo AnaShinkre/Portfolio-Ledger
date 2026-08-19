@@ -234,17 +234,17 @@ def main():
             print(f"  -> error: {e}")
             continue
 
-    stable = sorted([c for c in candidates if c["aboveSMA200"]], key=lambda c: c["volatility"])
-    top_candidates = stable[:9]
+    ranked = sorted(candidates, key=lambda c: c["volatility"])
+    top_candidates = ranked[:9]
 
     status = {
         "generatedAt": datetime.datetime.utcnow().isoformat() + "Z",
         "signals": signals,
         "safeCandidates": top_candidates,
         "note": (
-            "Screen = lowest realized volatility among a fixed large-cap universe, "
-            "currently trading above its 200-day average. Not a recommendation to buy; "
-            "purchase decisions are yours alone."
+            "Ranked by lowest realized volatility among a fixed large-cap universe. "
+            "'Above 200d avg' shows current trend but no longer excludes candidates. "
+            "Not a recommendation to buy; purchase decisions are yours alone."
         ),
     }
     with open("status.json", "w") as f:
