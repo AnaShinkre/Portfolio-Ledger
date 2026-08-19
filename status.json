@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:40:40.062537Z",
+  "generatedAt": "2026-08-19T01:49:52.340563Z",
   "signals": [
     {
       "ticker": "AMZN",
@@ -70,10 +70,40 @@
   ],
   "safeCandidates": [
     {
+      "ticker": "WEC",
+      "price": 111.05,
+      "volatility": 0.1568,
+      "aboveSMA200": false
+    },
+    {
+      "ticker": "DUK",
+      "price": 123.99,
+      "volatility": 0.1579,
+      "aboveSMA200": false
+    },
+    {
+      "ticker": "SO",
+      "price": 92.07,
+      "volatility": 0.1697,
+      "aboveSMA200": false
+    },
+    {
       "ticker": "ED",
       "price": 109.16,
       "volatility": 0.1723,
       "aboveSMA200": true
+    },
+    {
+      "ticker": "MCD",
+      "price": 266.99,
+      "volatility": 0.1819,
+      "aboveSMA200": false
+    },
+    {
+      "ticker": "PEG",
+      "price": 75.6,
+      "volatility": 0.1838,
+      "aboveSMA200": false
     },
     {
       "ticker": "JNJ",
@@ -88,41 +118,11 @@
       "aboveSMA200": true
     },
     {
-      "ticker": "LIN",
-      "price": 478.7,
-      "volatility": 0.1905,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "XEL",
-      "price": 79.17,
-      "volatility": 0.1936,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "CB",
-      "price": 345.29,
-      "volatility": 0.1938,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "COST",
-      "price": 961.35,
-      "volatility": 0.1974,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "ITW",
-      "price": 284.66,
-      "volatility": 0.2144,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "ECL",
-      "price": 280.0,
-      "volatility": 0.2183,
-      "aboveSMA200": true
+      "ticker": "AEP",
+      "price": 126.35,
+      "volatility": 0.1883,
+      "aboveSMA200": false
     }
   ],
-  "note": "Screen = lowest realized volatility among a fixed large-cap universe, currently trading above its 200-day average. Not a recommendation to buy; purchase decisions are yours alone."
+  "note": "Ranked by lowest realized volatility among a fixed large-cap universe. 'Above 200d avg' shows current trend but no longer excludes candidates. Not a recommendation to buy; purchase decisions are yours alone."
 }
