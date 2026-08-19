@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:12:53.952850Z",
+  "generatedAt": "2026-08-19T01:33:28.517764Z",
   "signals": [
     {
       "ticker": "AMZN",
@@ -70,6 +70,12 @@
   ],
   "safeCandidates": [
     {
+      "ticker": "ED",
+      "price": 109.16,
+      "volatility": 0.1723,
+      "aboveSMA200": true
+    },
+    {
       "ticker": "JNJ",
       "price": 271.11,
       "volatility": 0.186,
@@ -82,27 +88,39 @@
       "aboveSMA200": true
     },
     {
+      "ticker": "LIN",
+      "price": 478.7,
+      "volatility": 0.1909,
+      "aboveSMA200": true
+    },
+    {
+      "ticker": "CB",
+      "price": 345.29,
+      "volatility": 0.1938,
+      "aboveSMA200": true
+    },
+    {
+      "ticker": "XEL",
+      "price": 79.17,
+      "volatility": 0.1947,
+      "aboveSMA200": true
+    },
+    {
       "ticker": "COST",
       "price": 961.35,
       "volatility": 0.1974,
       "aboveSMA200": true
     },
     {
-      "ticker": "V",
-      "price": 364.25,
-      "volatility": 0.2195,
+      "ticker": "ITW",
+      "price": 284.66,
+      "volatility": 0.2157,
       "aboveSMA200": true
     },
     {
-      "ticker": "JPM",
-      "price": 363.25,
-      "volatility": 0.2219,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "MA",
-      "price": 574.31,
-      "volatility": 0.2231,
+      "ticker": "ECL",
+      "price": 280.0,
+      "volatility": 0.2183,
       "aboveSMA200": true
     }
   ],
