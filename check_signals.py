@@ -13,6 +13,7 @@ import csv
 import io
 import json
 import math
+import time
 import datetime
 import urllib.request
 
@@ -189,6 +190,7 @@ def main():
     signals = []
     for pos in positions:
         print(f"Fetching quote for {pos['ticker']}...")
+        time.sleep(0.3)
         price = fetch_quote(pos["ticker"])
         if price is None:
             print(f"  -> unavailable")
@@ -206,14 +208,18 @@ def main():
 
     candidates = []
     for t in CANDIDATE_UNIVERSE:
+        print(f"Screening {t}...")
+        time.sleep(0.4)  # be gentle with the free data source, avoid rate-limiting
         try:
             closes = fetch_history(t)
             if not closes:
+                print(f"  -> no history data")
                 continue
             price = closes[-1]
             vol = annualized_volatility(closes)
             sma200 = sma(closes, 200)
             if vol is None or sma200 is None:
+                print(f"  -> not enough history for volatility/SMA200")
                 continue
             candidates.append({
                 "ticker": t,
@@ -221,7 +227,9 @@ def main():
                 "volatility": round(vol, 4),
                 "aboveSMA200": price >= sma200,
             })
-        except Exception:
+            print(f"  -> price {price:.2f}, vol {vol:.3f}, above200d {price >= sma200}")
+        except Exception as e:
+            print(f"  -> error: {e}")
             continue
 
     stable = sorted([c for c in candidates if c["aboveSMA200"]], key=lambda c: c["volatility"])
