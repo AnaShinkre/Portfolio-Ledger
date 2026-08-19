@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:33:28.517764Z",
+  "generatedAt": "2026-08-19T01:40:40.062537Z",
   "signals": [
     {
       "ticker": "AMZN",
@@ -90,19 +90,19 @@
     {
       "ticker": "LIN",
       "price": 478.7,
-      "volatility": 0.1909,
+      "volatility": 0.1905,
+      "aboveSMA200": true
+    },
+    {
+      "ticker": "XEL",
+      "price": 79.17,
+      "volatility": 0.1936,
       "aboveSMA200": true
     },
     {
       "ticker": "CB",
       "price": 345.29,
       "volatility": 0.1938,
-      "aboveSMA200": true
-    },
-    {
-      "ticker": "XEL",
-      "price": 79.17,
-      "volatility": 0.1947,
       "aboveSMA200": true
     },
     {
@@ -114,7 +114,7 @@
     {
       "ticker": "ITW",
       "price": 284.66,
-      "volatility": 0.2157,
+      "volatility": 0.2144,
       "aboveSMA200": true
     },
     {
