@@ -32,6 +32,8 @@ CANDIDATE_UNIVERSE = [
     "JNJ", "PG", "KO", "PEP", "WMT", "MCD", "COST", "JPM", "V", "MA",
     "MSFT", "AAPL", "UNH", "HD", "MRK", "ABBV", "PFE", "VZ", "T", "XOM",
     "CVX", "NEE", "DUK", "SO", "MMM", "CAT", "HON", "LOW", "TGT", "CL",
+    "ADP", "LIN", "ITW", "SYK", "ABT", "BDX", "ECL", "WM", "KMB", "GIS",
+    "CB", "AON", "MDT", "ROP", "SPGI", "AEP", "ED", "WEC", "XEL", "PEG",
 ]
 
 
@@ -233,7 +235,7 @@ def main():
             continue
 
     stable = sorted([c for c in candidates if c["aboveSMA200"]], key=lambda c: c["volatility"])
-    top_candidates = stable[:6]
+    top_candidates = stable[:9]
 
     status = {
         "generatedAt": datetime.datetime.utcnow().isoformat() + "Z",
