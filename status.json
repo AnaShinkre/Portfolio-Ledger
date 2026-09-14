@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-11T22:56:46.315109Z",
+  "generatedAt": "2026-09-14T23:40:46.061650Z",
   "signals": [
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 256.78,
-      "unrealized": 26.78,
-      "afterTax": 22.76,
-      "holdingDays": 581,
+      "price": 253.54,
+      "unrealized": 23.54,
+      "afterTax": 20.01,
+      "holdingDays": 584,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -15,10 +15,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 38.43,
-      "unrealized": -51.78,
-      "afterTax": -51.78,
-      "holdingDays": 239,
+      "price": 38.1,
+      "unrealized": -52.44,
+      "afterTax": -52.44,
+      "holdingDays": 242,
       "isLT": false,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -26,10 +26,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 38.43,
-      "unrealized": -7.54,
-      "afterTax": -7.54,
-      "holdingDays": 1222,
+      "price": 38.1,
+      "unrealized": -8.2,
+      "afterTax": -8.2,
+      "holdingDays": 1225,
       "isLT": true,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -37,10 +37,10 @@
     {
       "ticker": "TSLA",
       "shares": 0.06747,
-      "price": 365.44,
-      "unrealized": 23.31,
-      "afterTax": 19.81,
-      "holdingDays": 462,
+      "price": 358.97,
+      "unrealized": 22.87,
+      "afterTax": 19.44,
+      "holdingDays": 465,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -48,10 +48,10 @@
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 365.44,
-      "unrealized": 194.01,
-      "afterTax": 164.91,
-      "holdingDays": 1222,
+      "price": 358.97,
+      "unrealized": 187.54,
+      "afterTax": 159.41,
+      "holdingDays": 1225,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -59,69 +59,69 @@
     {
       "ticker": "GOOGL",
       "shares": 1,
-      "price": 338.5,
-      "unrealized": 231.48,
-      "afterTax": 196.76,
-      "holdingDays": 1222,
+      "price": 349.39,
+      "unrealized": 242.37,
+      "afterTax": 206.01,
+      "holdingDays": 1225,
       "isLT": true,
-      "signal": "HOLD",
-      "detail": "Profit below $200 threshold."
+      "signal": "SELL",
+      "detail": "Long-term rate applies. Clears threshold."
     }
   ],
   "safeCandidates": [
     {
       "ticker": "WEC",
-      "price": 105.33,
+      "price": 105.17,
       "volatility": 0.1592,
       "aboveSMA200": false
     },
     {
       "ticker": "DUK",
-      "price": 119.42,
+      "price": 119.02,
       "volatility": 0.1609,
       "aboveSMA200": false
     },
     {
       "ticker": "SO",
-      "price": 87.17,
+      "price": 87.0,
       "volatility": 0.1721,
       "aboveSMA200": false
     },
     {
       "ticker": "ED",
-      "price": 106.46,
+      "price": 105.78,
       "volatility": 0.1733,
       "aboveSMA200": false
     },
     {
       "ticker": "PEG",
-      "price": 72.39,
-      "volatility": 0.184,
+      "price": 70.92,
+      "volatility": 0.185,
       "aboveSMA200": false
     },
     {
       "ticker": "MCD",
-      "price": 252.53,
-      "volatility": 0.1846,
+      "price": 257.49,
+      "volatility": 0.1854,
       "aboveSMA200": false
     },
     {
       "ticker": "KO",
-      "price": 88.29,
-      "volatility": 0.1884,
+      "price": 89.35,
+      "volatility": 0.1882,
       "aboveSMA200": true
     },
     {
       "ticker": "LIN",
-      "price": 466.22,
-      "volatility": 0.1912,
+      "price": 464.41,
+      "volatility": 0.1909,
       "aboveSMA200": false
     },
     {
-      "ticker": "AEP",
-      "price": 123.33,
-      "volatility": 0.1914,
-      "aboveSMA200": false
+      "ticker": "JNJ",
+      "price": 266.32,
+      "volatility": 0.1916,
+      "aboveSMA200": true
     }
   ],
   "note": "Ranked by lowest realized volatility among a fixed large-cap universe. 'Above 200d avg' shows current trend but no longer excludes candidates. Not a recommendation to buy; purchase decisions are yours alone."
