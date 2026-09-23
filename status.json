@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-22T23:26:59.894164Z",
+  "generatedAt": "2026-09-23T23:24:52.741216Z",
   "signals": [
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 254.98,
-      "unrealized": 24.98,
-      "afterTax": 21.23,
-      "holdingDays": 592,
+      "price": 249.27,
+      "unrealized": 19.27,
+      "afterTax": 16.38,
+      "holdingDays": 593,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -15,10 +15,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 34.42,
-      "unrealized": -59.8,
-      "afterTax": -59.8,
-      "holdingDays": 250,
+      "price": 35.65,
+      "unrealized": -57.34,
+      "afterTax": -57.34,
+      "holdingDays": 251,
       "isLT": false,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -26,10 +26,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 34.42,
-      "unrealized": -15.56,
-      "afterTax": -15.56,
-      "holdingDays": 1233,
+      "price": 35.65,
+      "unrealized": -13.1,
+      "afterTax": -13.1,
+      "holdingDays": 1234,
       "isLT": true,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -37,10 +37,10 @@
     {
       "ticker": "TSLA",
       "shares": 0.06747,
-      "price": 378.9,
-      "unrealized": 24.21,
-      "afterTax": 20.58,
-      "holdingDays": 473,
+      "price": 380.12,
+      "unrealized": 24.3,
+      "afterTax": 20.65,
+      "holdingDays": 474,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -48,10 +48,10 @@
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 378.9,
-      "unrealized": 207.47,
-      "afterTax": 176.35,
-      "holdingDays": 1233,
+      "price": 380.12,
+      "unrealized": 208.69,
+      "afterTax": 177.39,
+      "holdingDays": 1234,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -59,68 +59,68 @@
     {
       "ticker": "GOOGL",
       "shares": 1,
-      "price": 351.16,
-      "unrealized": 244.14,
-      "afterTax": 207.52,
-      "holdingDays": 1233,
+      "price": 337.83,
+      "unrealized": 230.81,
+      "afterTax": 196.19,
+      "holdingDays": 1234,
       "isLT": true,
-      "signal": "SELL",
-      "detail": "Long-term rate applies. Clears threshold."
+      "signal": "HOLD",
+      "detail": "Profit below $200 threshold."
     }
   ],
   "safeCandidates": [
     {
       "ticker": "WEC",
-      "price": 102.83,
-      "volatility": 0.1588,
+      "price": 101.17,
+      "volatility": 0.1605,
       "aboveSMA200": false
     },
     {
       "ticker": "DUK",
-      "price": 116.31,
-      "volatility": 0.1599,
+      "price": 114.17,
+      "volatility": 0.1616,
       "aboveSMA200": false
     },
     {
       "ticker": "SO",
-      "price": 85.15,
-      "volatility": 0.1722,
+      "price": 83.47,
+      "volatility": 0.1738,
       "aboveSMA200": false
     },
     {
       "ticker": "ED",
-      "price": 103.84,
-      "volatility": 0.1735,
+      "price": 102.61,
+      "volatility": 0.1742,
       "aboveSMA200": false
     },
     {
       "ticker": "PEG",
-      "price": 69.12,
-      "volatility": 0.1843,
+      "price": 67.31,
+      "volatility": 0.1868,
       "aboveSMA200": false
     },
     {
-      "ticker": "MCD",
-      "price": 250.35,
-      "volatility": 0.1867,
+      "ticker": "XEL",
+      "price": 70.66,
+      "volatility": 0.1887,
       "aboveSMA200": false
     },
     {
       "ticker": "KO",
-      "price": 88.61,
-      "volatility": 0.1892,
+      "price": 88.09,
+      "volatility": 0.1891,
       "aboveSMA200": true
     },
     {
       "ticker": "JNJ",
-      "price": 269.19,
-      "volatility": 0.1897,
+      "price": 269.17,
+      "volatility": 0.1901,
       "aboveSMA200": true
     },
     {
       "ticker": "LIN",
-      "price": 464.91,
-      "volatility": 0.1905,
+      "price": 469.72,
+      "volatility": 0.1916,
       "aboveSMA200": false
     }
   ],
