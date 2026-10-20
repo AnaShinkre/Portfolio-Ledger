@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-20T00:05:04.537350Z",
+  "generatedAt": "2026-10-20T23:36:02.864223Z",
   "signals": [
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 262.45,
-      "unrealized": 32.45,
-      "afterTax": 27.58,
+      "price": 262.63,
+      "unrealized": 32.63,
+      "afterTax": 27.74,
       "holdingDays": 620,
       "isLT": true,
       "signal": "HOLD",
@@ -37,9 +37,9 @@
     {
       "ticker": "TSLA",
       "shares": 0.06747,
-      "price": 368.06,
-      "unrealized": 23.48,
-      "afterTax": 19.96,
+      "price": 373.71,
+      "unrealized": 23.86,
+      "afterTax": 20.29,
       "holdingDays": 501,
       "isLT": true,
       "signal": "HOLD",
@@ -48,9 +48,9 @@
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 368.06,
-      "unrealized": 196.63,
-      "afterTax": 167.14,
+      "price": 373.71,
+      "unrealized": 202.28,
+      "afterTax": 171.94,
       "holdingDays": 1261,
       "isLT": true,
       "signal": "HOLD",
@@ -59,69 +59,69 @@
     {
       "ticker": "GOOGL",
       "shares": 1,
-      "price": 344.18,
-      "unrealized": 237.16,
-      "afterTax": 201.59,
+      "price": 340.27,
+      "unrealized": 233.25,
+      "afterTax": 198.27,
       "holdingDays": 1261,
       "isLT": true,
-      "signal": "SELL",
-      "detail": "Long-term rate applies. Clears threshold."
+      "signal": "HOLD",
+      "detail": "Profit below $200 threshold."
     }
   ],
   "safeCandidates": [
     {
       "ticker": "DUK",
-      "price": 121.47,
-      "volatility": 0.1602,
+      "price": 121.33,
+      "volatility": 0.1618,
       "aboveSMA200": false
     },
     {
       "ticker": "WEC",
-      "price": 108.71,
-      "volatility": 0.1611,
+      "price": 108.75,
+      "volatility": 0.1622,
+      "aboveSMA200": false
+    },
+    {
+      "ticker": "SO",
+      "price": 90.71,
+      "volatility": 0.1757,
       "aboveSMA200": false
     },
     {
       "ticker": "ED",
-      "price": 112.26,
-      "volatility": 0.1735,
+      "price": 111.98,
+      "volatility": 0.1759,
       "aboveSMA200": true
     },
     {
-      "ticker": "SO",
-      "price": 91.18,
-      "volatility": 0.1741,
-      "aboveSMA200": false
+      "ticker": "KO",
+      "price": 93.49,
+      "volatility": 0.1874,
+      "aboveSMA200": true
     },
     {
       "ticker": "PEG",
-      "price": 71.49,
-      "volatility": 0.1883,
-      "aboveSMA200": false
-    },
-    {
-      "ticker": "XEL",
-      "price": 76.31,
-      "volatility": 0.1891,
+      "price": 70.86,
+      "volatility": 0.1878,
       "aboveSMA200": false
     },
     {
       "ticker": "LIN",
-      "price": 498.43,
-      "volatility": 0.1894,
+      "price": 501.89,
+      "volatility": 0.1893,
       "aboveSMA200": true
     },
     {
-      "ticker": "AEP",
-      "price": 127.14,
-      "volatility": 0.1908,
+      "ticker": "XEL",
+      "price": 76.68,
+      "volatility": 0.1903,
       "aboveSMA200": false
     },
     {
-      "ticker": "KO",
-      "price": 93.9,
-      "volatility": 0.1918,
-      "aboveSMA200": true
+      "ticker": "AEP",
+      "price": 127.22,
+      "volatility": 0.1924,
+      "aboveSMA200": false
     }
   ],
   "note": "Ranked by lowest realized volatility among a fixed large-cap universe. 'Above 200d avg' shows current trend but no longer excludes candidates. Not a recommendation to buy; purchase decisions are yours alone."
