@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-21T23:53:22.490103Z",
+  "generatedAt": "2026-10-22T23:50:22.475802Z",
   "signals": [
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 262.37,
-      "unrealized": 32.37,
-      "afterTax": 27.51,
-      "holdingDays": 621,
+      "price": 250.38,
+      "unrealized": 20.38,
+      "afterTax": 17.32,
+      "holdingDays": 622,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -15,10 +15,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 38.51,
-      "unrealized": -51.62,
-      "afterTax": -51.62,
-      "holdingDays": 279,
+      "price": 39.04,
+      "unrealized": -50.56,
+      "afterTax": -50.56,
+      "holdingDays": 280,
       "isLT": false,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -26,10 +26,10 @@
     {
       "ticker": "AR",
       "shares": 2,
-      "price": 38.51,
-      "unrealized": -7.38,
-      "afterTax": -7.38,
-      "holdingDays": 1262,
+      "price": 39.04,
+      "unrealized": -6.32,
+      "afterTax": -6.32,
+      "holdingDays": 1263,
       "isLT": true,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -37,10 +37,10 @@
     {
       "ticker": "TSLA",
       "shares": 0.06747,
-      "price": 386.47,
-      "unrealized": 24.73,
-      "afterTax": 21.02,
-      "holdingDays": 502,
+      "price": 374.58,
+      "unrealized": 23.92,
+      "afterTax": 20.33,
+      "holdingDays": 503,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -48,10 +48,10 @@
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 386.47,
-      "unrealized": 215.04,
-      "afterTax": 182.78,
-      "holdingDays": 1262,
+      "price": 374.58,
+      "unrealized": 203.15,
+      "afterTax": 172.68,
+      "holdingDays": 1263,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -59,10 +59,10 @@
     {
       "ticker": "GOOGL",
       "shares": 1,
-      "price": 334.76,
-      "unrealized": 227.74,
-      "afterTax": 193.58,
-      "holdingDays": 1262,
+      "price": 324.22,
+      "unrealized": 217.2,
+      "afterTax": 184.62,
+      "holdingDays": 1263,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -70,58 +70,58 @@
   ],
   "safeCandidates": [
     {
-      "ticker": "DUK",
-      "price": 120.67,
-      "volatility": 0.1618,
-      "aboveSMA200": false
-    },
-    {
       "ticker": "WEC",
-      "price": 108.5,
-      "volatility": 0.1621,
-      "aboveSMA200": false
-    },
-    {
-      "ticker": "SO",
-      "price": 90.39,
-      "volatility": 0.1756,
-      "aboveSMA200": false
-    },
-    {
-      "ticker": "ED",
-      "price": 111.82,
-      "volatility": 0.1759,
+      "price": 112.15,
+      "volatility": 0.1651,
       "aboveSMA200": true
     },
     {
-      "ticker": "KO",
-      "price": 92.68,
-      "volatility": 0.1875,
+      "ticker": "DUK",
+      "price": 125.4,
+      "volatility": 0.166,
+      "aboveSMA200": true
+    },
+    {
+      "ticker": "SO",
+      "price": 93.82,
+      "volatility": 0.1792,
+      "aboveSMA200": true
+    },
+    {
+      "ticker": "ED",
+      "price": 116.26,
+      "volatility": 0.1798,
       "aboveSMA200": true
     },
     {
       "ticker": "PEG",
-      "price": 71.0,
-      "volatility": 0.1876,
+      "price": 72.72,
+      "volatility": 0.1888,
       "aboveSMA200": false
     },
     {
+      "ticker": "KO",
+      "price": 95.34,
+      "volatility": 0.189,
+      "aboveSMA200": true
+    },
+    {
       "ticker": "LIN",
-      "price": 500.57,
-      "volatility": 0.1893,
+      "price": 510.36,
+      "volatility": 0.1903,
       "aboveSMA200": true
     },
     {
       "ticker": "XEL",
-      "price": 76.78,
-      "volatility": 0.1903,
-      "aboveSMA200": false
+      "price": 78.9,
+      "volatility": 0.1923,
+      "aboveSMA200": true
     },
     {
-      "ticker": "AEP",
-      "price": 127.39,
-      "volatility": 0.1924,
-      "aboveSMA200": false
+      "ticker": "CB",
+      "price": 363.95,
+      "volatility": 0.1929,
+      "aboveSMA200": true
     }
   ],
   "note": "Ranked by lowest realized volatility among a fixed large-cap universe. 'Above 200d avg' shows current trend but no longer excludes candidates. Not a recommendation to buy; purchase decisions are yours alone."
