@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T03:21:27.340702Z",
+  "generatedAt": "2026-11-27T03:27:15.136268Z",
   "signals": [
     {
       "ticker": "AMZN",
@@ -7,7 +7,7 @@
       "price": 244.43,
       "unrealized": 14.43,
       "afterTax": 12.27,
-      "holdingDays": 657,
+      "holdingDays": 658,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -18,7 +18,7 @@
       "price": 37.13,
       "unrealized": -54.38,
       "afterTax": -54.38,
-      "holdingDays": 315,
+      "holdingDays": 316,
       "isLT": false,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -29,7 +29,7 @@
       "price": 37.13,
       "unrealized": -10.14,
       "afterTax": -10.14,
-      "holdingDays": 1298,
+      "holdingDays": 1299,
       "isLT": true,
       "signal": "HOLD",
       "detail": "No gain currently."
@@ -40,7 +40,7 @@
       "price": 380.14,
       "unrealized": 24.3,
       "afterTax": 20.65,
-      "holdingDays": 538,
+      "holdingDays": 539,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -51,7 +51,7 @@
       "price": 380.14,
       "unrealized": 208.71,
       "afterTax": 177.4,
-      "holdingDays": 1298,
+      "holdingDays": 1299,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
@@ -62,7 +62,7 @@
       "price": 273.1,
       "unrealized": 166.08,
       "afterTax": 141.17,
-      "holdingDays": 1298,
+      "holdingDays": 1299,
       "isLT": true,
       "signal": "HOLD",
       "detail": "Profit below $200 threshold."
